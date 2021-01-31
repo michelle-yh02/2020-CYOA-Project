@@ -227,5 +227,52 @@ public class CYOAbase {
 }//Class bracket
 
 
+import java.util.Scanner;
+
+public class NorthKorea 
+{
+
+    public static void main(String[] args)
+    {
+        System.out.println("Now that you're at the North Korea border patrol,\n"
+            + "you blackmail the border security with your knowledge of \n"
+            + "Kim Jong Un's whereabouts even though he's dead, at least \n"
+            + "that's what the world thinks\n");
+        System.out.println("With this secret knowledge in your hands, security \n"
+            + "felt you were trustworthy enough to reveal to you where the evil \n"
+            + "man was hiding with his vaccine\n");
+        System.out.println("But the question is, do you believe what they say"
+            + "?");
+        
+        System.out.println("1. You believe they're telling the truth");
+        System.out.println("2. You don't believe they're telling the truth");
+        
+        Scanner input = new Scanner(System.in);
+        String choice = input.nextLine();
+        if (choice.equals("1"))
+        {
+            System.out.println("Oh no, it looks like they told the Evil Vaccine \n"
+                + "Man to escape and find a new hiding place");
+            System.out.println("you have been arrested, you have failed to\n"
+                + "save your world from this vaccine,"
+                + " farewell");
+        }
+        else if (choice.equals("2"))
+        {
+            System.out.println("You're ready to call their bluff and say \n"
+                + "'that's not his hiding place!'\n");
+            System.out.println("Border Security: How do you know where the Evil \n"
+                + "Vaccine Man is hiding?!!\n");
+            System.out.println("Quick thinking on your part, tricking them into \n"
+                + "confirming your guess, good job!");
+        }
+        else
+        {
+            System.out.println("this is your end, farewell");
+        }
+        input.close();
+        
+    }
+}
 
 
