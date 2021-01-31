@@ -5,10 +5,57 @@ import java.util.Scanner;
 public class CYOAbase {
 
     public static void main(String[] args) {
+            System.out.println("Welcome to Jumanji!");
+            System.out.println("Hah just kidding but 2020 wasn't any better...\n");
+            System.out.println("A lot happened in 2020");
+            
+            Scanner input = new Scanner(System.in);
+            
+            System.out.println("Choose your Character");
+            System.out.println("1. " + "Gen-Z TikToker");
+            System.out.println("2. " + "Anti-Masker Karen");
+            System.out.println("3. " + "Fabulous First Responder");
+            
+            String character = input.nextLine();
+            if (character.equals("1"))
+            {
+                System.out.println("\nWe've got a celebrity among us");
+            }
+            else if (character.equals("2"))
+            {
+                System.out.println("\nUmm interesting choice, Karen.");
+            }
+            else if (character.equals("3"))
+            {
+                System.out.println("\nAmazing choice, thank you for your service");
+            }
+            else
+            {
+                System.out.println("\nThis is your end, farewell");
+            }
+            System.out.println("\nNow that we know who you are, let's continue "
+                + "with our story\n");
+            
+            System.out.println("Press enter to continue...");
+            try 
+            {
+                System.in.read();
+            }
+            catch (Exception e)
+            {
+            }
+        
+            System.out.println("It's March 13, 2020, life as we know it is changing. \n"
+                + "People are beginning to walk around with masks on their faces, \n"
+                + "gloves on their hands, it's getting weird out there. Are you going \n"
+                + "to run and hide? Or are you going to save your world from \n"
+                + "disaster? I guess we'll just have to see as you create your \n"
+                + "journey and forge your path to victory... or death... the choice \n"
+                + "is yours... good luck");
         Scanner keyboard = new Scanner(System.in);
         
         //The Start of Part I: The Shopping Trip
-        System.out.println("You need supplies, do you want to:"
+        System.out.println("You need supplies, do you want to:\n"
             + "1. Go to the store and buy some, \n"
             + "or\n"
             + "2. Stay at home and buy supplies later");       
