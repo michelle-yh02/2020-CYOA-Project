@@ -4,6 +4,88 @@ import java.util.Scanner;
 public class CYOAbase {
 
     public static void main(String[] args) {
+        
+        Scanner questions = new Scanner(System.in);
+        //Q1
+        System.out.println("You need supplies, do you go"
+            + " to the store and buy some, yes or no?");
+
+        String store = questions.next();
+        //Q1 Choice 1
+        if (store.equalsIgnoreCase("yes")) {
+            //Q2
+            System.out.println(
+                "You go to the store to get supplies. While at the store, "
+                    + "you encounter a rush on toilet paper. Do you: 1. fight or 2. leave?");
+
+            String tp = questions.next();
+            //Q2 Choice 1
+            if (tp.equalsIgnoreCase("1")) {
+                System.out.println("You have won some toilet paper!");
+                // mission
+            }
+            //Q2 Choice 2
+            else if (tp.equalsIgnoreCase("2")) {
+                //Q3
+                System.out.println("On your way out of the store you "
+                    + "encounter an anti-masker. Do you: 1. ask him to put on"
+                    + " a mask or 2. leave him alone?");
+
+                String mask = questions.next();
+                //Q3 Choice 1
+                if (mask.equalsIgnoreCase("1")) {
+                    //Q4
+                    System.out.println(
+                        "He yells back, NO! Do you: 1. get everyone to "
+                        + "publicly shame him or 2. leave him alone?");
+
+                    String shame = questions.next();
+                    //Q4 Choice 1
+                    if (shame.equalsIgnoreCase("1")) {
+                        System.out.println(
+                            "He was embarrassed and put his mask on,"
+                                + " you have protected the store from COVID-19.");
+                        // mission
+                    }
+                    //Q4 Choice 2
+                    else if (shame.equalsIgnoreCase("2")) {
+                        System.out.println(
+                            "You backed down and unfortunately contracted"
+                                + " COVID-19 from him.");
+                    }
+                    else {
+                        System.out.println("You entered an invalid response."
+                            + "I am sorry, but game over.");
+                    }
+
+                }
+                //Q3 Choice 2
+                else if (mask.equalsIgnoreCase("2")) {
+                    System.out.println("You unfortunately caught COVID-19"
+                        + " because you did not ask the man to put a mask on.");
+                }
+                else {
+                    System.out.println("You entered an invalid response."
+                        + "I am sorry, but game over.");
+                }
+            }
+            else {
+                System.out.println("You entered an invalid response."
+                    + "I am sorry, but game over.");
+            }
+        }
+        //Q1 Choice 2
+        else if (store.equalsIgnoreCase("no")) {
+            System.out.println("Unfortunately you have died "
+                + "of starvation because you ran out of supplies.");
+        }
+        else {
+            System.out.println("You entered an invalid response."
+                + "I am sorry, but game over.");
+            }
+        }
+        questions.close();
+        
         Scanner keyboard = new Scanner(System.in);
 
         // The start of Part II: The Mission
@@ -91,7 +173,47 @@ public class CYOAbase {
                                 
                                     //New Zealand scene (confronting Evil Vaccine Man)
                                     
-                                   
+                                    Scanner in = new Scanner(System.in);
+        
+                                    System.out.println("You must now face off against "
+                                    + "Evil Vaccine Man. You have 3 choices: "
+                                    + "\n 1. Convince the aliens to join you in exchange for human data."
+                                    + "\n 2. Zoom call with the United Nations."
+                                    + "\n 3. Battle the Evil Vaccine Man alone.");
+        
+                                    String answer = in.next();
+        
+                                    if (answer.equalsIgnoreCase("1")) {
+                                    System.out.println("The Evil Vaccine Man is overpowered by Aliens,"
+                                    + " so he has no choice but to give up the vaccines."
+                                    + "Now that the Evil Vaccine Man is defeated"
+                                    + " and the vaccine has been replicated and distributed all"
+                                    + " over the world, the pandemic is finally over! In these"
+                                    + " hard times, we have had to connect although we were"
+                                    + " physically apart. By reaching out to your comrades, "
+                                    + "you were able to band together to beat this pandemic :)");
+                        }
+            else if (answer.equalsIgnoreCase("2")) {
+            System.out.println("The Evil Vaccine Man’s location is revealed "
+                + "to the UN and they respond by sending their military forces,"
+                + " so the Evil Vaccine Man is left with no choice but to give up"
+                + " the vaccines. Now that the Evil Vaccine Man is defeated"
+                + " and the vaccine has been replicated and distributed all"
+                + " over the world, the pandemic is finally over! In these"
+                + " hard times, we have had to connect although we were"
+                + " physically apart. By reaching out to your comrades, "
+                + "you were able to band together to beat this pandemic :)");
+        }
+        else if (answer.equalsIgnoreCase("3")) {
+            System.out.println("You cannot face the Evil Vaccine Man alone,"
+                + " so you are ultimately defeated.");
+        }
+        else {
+            System.out.println("You have not chosen a valid option to face the"
+                + "Evil Vaccine Man and have therefore failed your mission.");
+        }
+        in.close();
+    }
                                 
                                     
                                 }
